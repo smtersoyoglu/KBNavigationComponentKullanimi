@@ -26,6 +26,10 @@ class AnasayfaFragment : Fragment() {
             val urun = Urunler(100,"TV")
             val gecis = AnasayfaFragmentDirections.actionAnasayfaFragmentToDetayFragment(urun = urun, ad ="Ahmet", yas = 23, boy = 1.78f,bekar = true)
             Navigation.findNavController(it).navigate(gecis)
+        }
+
+        binding.buttonGoster.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.bottomSheetGecis)
 
         }
 
