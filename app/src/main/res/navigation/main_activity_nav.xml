@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/anasayfaFragment"
-        android:name="com.sametersoyoglu.kbnavigationcomponentkullanimi.AnasayfaFragment"
+        android:name="com.sametersoyoglu.kbnavigationcomponentkullanimi.Odev4.AnasayfaFragment"
         android:label="fragment_anasayfa"
         tools:layout="@layout/fragment_anasayfa" >
         <action
@@ -16,10 +16,13 @@
         <action
             android:id="@+id/bottomSheetGecis"
             app:destination="@id/bottomSheetFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_sayfaXFragment"
+            app:destination="@id/sayfaXFragment" />
     </fragment>
     <fragment
         android:id="@+id/detayFragment"
-        android:name="com.sametersoyoglu.kbnavigationcomponentkullanimi.DetayFragment"
+        android:name="com.sametersoyoglu.kbnavigationcomponentkullanimi.Odev4.DetayFragment"
         android:label="fragment_detay"
         tools:layout="@layout/fragment_detay" >
         <argument
@@ -41,6 +44,9 @@
         <argument
             android:name="urun"
             app:argType="com.sametersoyoglu.kbnavigationcomponentkullanimi.Urunler" />
+        <action
+            android:id="@+id/action_detayFragment_to_sayfaBFragment"
+            app:destination="@id/sayfaBFragment" />
     </fragment>
     <dialog
         android:id="@+id/bottomSheetFragment"
@@ -52,4 +58,31 @@
         android:name="com.sametersoyoglu.kbnavigationcomponentkullanimi.AyarlarFragment"
         android:label="fragment_ayarlar"
         tools:layout="@layout/fragment_ayarlar" />
+    <fragment
+        android:id="@+id/sayfaBFragment"
+        android:name="com.sametersoyoglu.kbnavigationcomponentkullanimi.Odev4.SayfaBFragment"
+        android:label="fragment_sayfa_b"
+        tools:layout="@layout/fragment_sayfa_b" >
+        <action
+            android:id="@+id/action_sayfaBFragment_to_sayfaYFragment"
+            app:destination="@id/sayfaYFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfaXFragment"
+        android:name="com.sametersoyoglu.kbnavigationcomponentkullanimi.Odev4.SayfaXFragment"
+        android:label="fragment_sayfa_x"
+        tools:layout="@layout/fragment_sayfa_x" >
+        <action
+            android:id="@+id/action_sayfaXFragment_to_sayfaYFragment"
+            app:destination="@id/sayfaYFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfaYFragment"
+        android:name="com.sametersoyoglu.kbnavigationcomponentkullanimi.Odev4.SayfaYFragment"
+        android:label="fragment_sayfa_y"
+        tools:layout="@layout/fragment_sayfa_y" >
+        <action
+            android:id="@+id/action_sayfaYFragment_to_anasayfaFragment2"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
 </navigation>
