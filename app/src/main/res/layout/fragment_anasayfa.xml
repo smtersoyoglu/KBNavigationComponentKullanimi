@@ -4,7 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AnasayfaFragment">
+    android:background="#268CDD"
+    tools:context=".Odev4.AnasayfaFragment">
+
+    <Button
+        android:id="@+id/buttonGitX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="GİT > X"
+        android:textSize="30sp"
+        app:cornerRadius="2sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGoster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGitA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="GİT > A"
+        android:textSize="30sp"
+        app:cornerRadius="2sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGitX"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -12,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Ana Sayfa"
+        android:textColor="@color/black"
         android:textSize="38sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
         android:text="DETAY"
-        android:textSize="24sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -35,12 +63,10 @@
         android:id="@+id/buttonGoster"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
         android:text="Göster"
-        android:textSize="24sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonDetay"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
